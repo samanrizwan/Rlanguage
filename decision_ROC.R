@@ -1,7 +1,5 @@
-getwd()
-getwd()
-#stevens = read.csv("stevens.csv")
-stevens = read.csv("E:\\data science\\1st sem\\business analytics nd strategy\\stevens\\stevens.csv")
+
+stevens = read.csv("stevens.csv")
 head(stevens)
 str(stevens) #str shows structure
 #library to set split
