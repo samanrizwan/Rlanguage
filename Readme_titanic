@@ -1,0 +1,61 @@
+# Titanic Survival Prediction (Logistic Regression in R)
+
+This code implements a **logistic regression model in R** to predict passenger survival using the famous Kaggle competition dataset:
+Titanic - Machine Learning from Disaster.
+The goal is to build a binary classification model that predicts whether a passenger survived the Titanic disaster.
+
+## Dataset
+
+The dataset is provided by Kaggle and includes:
+
+* `train.csv` → training data (includes survival labels)
+* `test.csv` → test data (no labels)
+* `gender_submission.csv` → sample submission format
+
+Download dataset here:
+https://www.kaggle.com/c/titanic/data
+ 
+Note: The dataset is **not included in this repository** due to Kaggle competition rules. Please download it directly from Kaggle.
+
+## Workflow
+
+The pipeline is as follow:
+
+1. Import libraries and dataset
+2. Data preprocessing (handling missing values, encoding categorical variables)
+3. Train logistic regression model using `glm()`
+4. Predict survival probabilities on test data
+5. Convert probabilities to binary outcomes
+6. Generate submission file
+
+## Model
+
+* Algorithm: **Logistic Regression**
+* Target Variable: `Survived` (0 = No, 1 = Yes)
+* Features used (example):
+
+  * Passenger Class (`Pclass`)
+  * Sex (`Sex`)
+  * Age (`Age`)
+  * Fare (`Fare`)
+
+## Evaluation
+
+Since by default  test.csv has no true labels i did'nt evaluate accuracy here.
+Although it can be evaluated by splitting `train.csv` into train/test locally.
+
+
+##  Notes
+
+* This project is for **learning purposes**
+* You can improve performance using:
+
+  * Feature engineering
+  * More advanced models (Random Forest, XGBoost)
+
+## 🙌 Acknowledgement
+
+Dataset provided by Kaggle:
+Titanic - Machine Learning from Disaster
+
+[1]: https://www.dataquest.io/blog/kaggle-fundamentals/?utm_source=chatgpt.com "Kaggle Fundamentals: The Titanic Competition – Dataquest"
